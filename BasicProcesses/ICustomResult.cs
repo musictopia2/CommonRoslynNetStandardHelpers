@@ -1,5 +1,5 @@
-﻿namespace CommonSourceGeneratorsHelpers;
-public interface ICustomResult
+﻿namespace CommonRoslynNetStandardHelpers.BasicProcesses;
+public interface IClassResult
 {
     //decided that there are many common things that all common results should have.
     //they suggest instead of capturing the symbol for processing capturing common information.

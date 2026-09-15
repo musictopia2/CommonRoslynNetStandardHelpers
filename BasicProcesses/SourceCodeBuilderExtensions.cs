@@ -1,5 +1,6 @@
-﻿using Microsoft.CodeAnalysis;
-namespace CommonSourceGeneratorsHelpers;
+﻿using CommonSourceGeneratorsHelpers;
+using Microsoft.CodeAnalysis;
+namespace CommonRoslynNetStandardHelpers.BasicProcesses;
 public static class SourceCodeBuilderExtensions
 {
     //i like the idea of doing as extensions and not requiring new members for the interface.
@@ -200,7 +201,7 @@ public static class SourceCodeBuilderExtensions
             .Write(";");
         return w;
     }
-    public static void StartPartialClass(this SourceCodeStringBuilder builder, ICustomResult result, Action<ICodeBlock> action)
+    public static void StartPartialClass(this SourceCodeStringBuilder builder, IClassResult result, Action<ICodeBlock> action)
     {
         builder.WriteLine("#nullable enable")
                 .WriteLine(w =>
@@ -235,7 +236,7 @@ public static class SourceCodeBuilderExtensions
                 action.Invoke(w);
             });
     }
-    public static void StartPartialClassImplements(this SourceCodeStringBuilder builder, ICustomResult result, string implements, Action<ICodeBlock> content) //sometimes, you need to implement something. i think name should be a little different.
+    public static void StartPartialClassImplements(this SourceCodeStringBuilder builder, IClassResult result, string implements, Action<ICodeBlock> content) //sometimes, you need to implement something. i think name should be a little different.
     {
         builder.WriteLine("#nullable enable")
                 .WriteLine(w =>
@@ -252,7 +253,7 @@ public static class SourceCodeBuilderExtensions
             })
             .WriteCodeBlock(content.Invoke);
     }
-    public static void StartPartialClassConsoleWriter(this SourceCodeStringBuilder builder, ICustomResult result, string method, Action<ICodeBlock> action)
+    public static void StartPartialClassConsoleWriter(this SourceCodeStringBuilder builder, IClassResult result, string method, Action<ICodeBlock> action)
     {
         builder.StartPartialClass(result, w =>
         {
@@ -264,11 +265,11 @@ public static class SourceCodeBuilderExtensions
             });
         });
     }
-    public static void StartPartialClassConsoleWriter(this SourceCodeStringBuilder builder, ICustomResult result, Action<ICodeBlock> action)
+    public static void StartPartialClassConsoleWriter(this SourceCodeStringBuilder builder, IClassResult result, Action<ICodeBlock> action)
     {
         builder.StartPartialClassConsoleWriter(result, "RunTest", action);
     }
-    public static void StartPartialClassImplements(this SourceCodeStringBuilder builder, ICustomResult result, Action<IWriter> implements, Action<ICodeBlock> content) //sometimes, you need to implement something. i think name should be a little different.
+    public static void StartPartialClassImplements(this SourceCodeStringBuilder builder, IClassResult result, Action<IWriter> implements, Action<ICodeBlock> content) //sometimes, you need to implement something. i think name should be a little different.
     {
         builder.WriteLine("#nullable enable")
                 .WriteLine(w =>

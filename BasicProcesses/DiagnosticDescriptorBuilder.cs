@@ -1,6 +1,6 @@
-﻿using Microsoft.CodeAnalysis;
+﻿global using bb1 = CommonRoslynNetStandardHelpers.BasicProcesses.DiagnosticDescriptorBuilder;
+using Microsoft.CodeAnalysis;
 namespace CommonRoslynNetStandardHelpers.BasicProcesses;
-
 public static class DiagnosticDescriptorBuilder
 {
     public static IIdStep Create()

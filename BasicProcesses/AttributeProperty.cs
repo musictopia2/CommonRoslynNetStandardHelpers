@@ -1,5 +1,5 @@
 ﻿global using CommonRoslynExtensionsLibrary;
-namespace CommonRoslynExtensionsLibrary;
+namespace CommonRoslynExtensionsLibrary; //this has to be left alone.  does global automatically when using.
 /// <summary>
 /// this gives the information necessary to get the values of the property
 /// </summary>

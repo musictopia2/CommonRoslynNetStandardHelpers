@@ -1,5 +1,5 @@
-﻿using Microsoft.CodeAnalysis.CSharp.Syntax;
-
+﻿global using CommonRoslynNetStandardHelpers.AdvancedGeneralFunctionsAndProcesses.RoslynExtensions;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 namespace CommonRoslynNetStandardHelpers.AdvancedGeneralFunctionsAndProcesses.RoslynExtensions;
 public static class ClassDeclarationExtensions
 {

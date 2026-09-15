@@ -1,7 +1,7 @@
 ﻿using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Diagnostics;
 
-namespace AnalyzersPracticeLibrary.Helpers;
+namespace CommonRoslynNetStandardHelpers.AdvancedGeneralFunctionsAndProcesses.RoslynExtensions;
 public static class SyntaxNodeExtensions
 {
     extension(SyntaxNodeAnalysisContext context)

@@ -1,6 +1,6 @@
 ﻿using Microsoft.CodeAnalysis.CSharp.Syntax;
 
-namespace AnalyzersPracticeLibrary.Helpers;
+namespace CommonRoslynNetStandardHelpers.AdvancedGeneralFunctionsAndProcesses.RoslynExtensions;
 
 public static class MethodDeclarationExtensions
 {

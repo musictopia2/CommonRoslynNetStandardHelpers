@@ -1,6 +1,6 @@
-﻿using CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.Misc;
+﻿using CommonRoslynNetStandardHelpers.AdvancedGeneralFunctionsAndProcesses.Misc;
 using System.Collections;
-namespace CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.BasicExtensions;
+namespace CommonRoslynNetStandardHelpers.AdvancedGeneralFunctionsAndProcesses.BasicExtensions;
 public static class Lists
 {
     extension<T>(Dictionary<int, T> list)

@@ -1,5 +1,5 @@
-﻿using CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.Misc;
-namespace CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.BasicExtensions;
+﻿using CommonRoslynNetStandardHelpers.AdvancedGeneralFunctionsAndProcesses.Misc;
+namespace CommonRoslynNetStandardHelpers.AdvancedGeneralFunctionsAndProcesses.BasicExtensions;
 public static class Integers
 {
     extension(IEnumerable<int> list)

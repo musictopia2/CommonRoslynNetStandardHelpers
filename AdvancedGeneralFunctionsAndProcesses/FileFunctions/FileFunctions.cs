@@ -1,4 +1,4 @@
-﻿namespace CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions;
+﻿namespace CommonRoslynNetStandardHelpers.AdvancedGeneralFunctionsAndProcesses.FileFunctions;
 public static class FileFunctions
 { 
     public static string DirectoryName(string directoryPath)

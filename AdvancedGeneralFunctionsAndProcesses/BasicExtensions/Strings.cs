@@ -1,5 +1,5 @@
 ﻿using System.Globalization;
-namespace CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.BasicExtensions;
+namespace CommonRoslynNetStandardHelpers.AdvancedGeneralFunctionsAndProcesses.BasicExtensions;
 public static class Strings
 {
     extension(string payLoad)

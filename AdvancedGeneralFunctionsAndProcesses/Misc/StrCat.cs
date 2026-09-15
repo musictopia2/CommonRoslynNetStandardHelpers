@@ -1,5 +1,5 @@
 ﻿using System.Text;
-namespace CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.Misc;
+namespace CommonRoslynNetStandardHelpers.AdvancedGeneralFunctionsAndProcesses.Misc;
 public class StrCat
 {
     private StringBuilder _atoms = new();
